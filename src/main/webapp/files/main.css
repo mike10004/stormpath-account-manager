@@ -1,0 +1,110 @@
+/*
+ * (c) 2015 Mike Chaberski <mike10004@users.noreply.github.com>
+ *
+ * Distributed under MIT License.
+ */
+
+header {
+    display: block;
+    background-color: darkblue;
+    color: #d0d0d0;
+    width: 100%;
+    padding: 4px;
+}
+
+header h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+header a {
+    color: #f8f8f8;
+}
+
+header a:hover {
+    color: #ffffff;
+}
+
+header a:visited {
+    color: #f0f0f0;
+}
+
+header {
+    display: table;
+}
+
+header > * {
+    display: table-row;
+}
+
+header > * > * {
+    display: table-cell;
+}
+
+header > * > div {
+    text-align: right;
+}
+
+.main {
+    margin: 8px;
+}
+
+h1 {
+    font-size: 14pt;
+}
+
+h2 {
+    font-size: 13pt;
+}
+
+h3 {
+    font-size: 12pt;
+}
+
+form[name="resetrequest"] {
+    max-width: 400px;
+}
+
+form input[type="submit"] {
+    cursor: pointer;
+}
+
+form input[type="submit"]:disabled {
+    cursor: default;
+    color: #808080;
+}
+
+form[name="resetperform"] {
+    max-width: 640px;
+}
+
+form[name="resetperform"] input {
+    /*width: auto;*/
+}
+
+form[name="resetperform"] fieldset {
+    display: table;
+    width: 100%;
+}
+
+form[name="resetperform"] fieldset > * {
+    display: table-row;
+    width: 100%;
+}
+
+form[name="resetperform"] fieldset > * > * {
+    display: table-cell;
+    padding: 8px;
+}
+
+form[name="resetperform"] .label-container {
+    width: 34%;
+}
+
+form[name="resetperform"] .input-container {
+    width: 66%;
+}
+
+.token-verified-false input {
+    font-weight: normal;
+}
