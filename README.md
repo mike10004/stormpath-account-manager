@@ -63,5 +63,3 @@ credentials were all part of a single Google Apps Domain. So those users
 authenticate with their Google account to this web application, which enables
 them to reset the password on their Stormpath-managed account. Essentially,
 this app operates as a sort of admin console for the other application.
-
-
