@@ -7,13 +7,21 @@
 function FormResponseHandler(formSelector, responseSpanSelector, postUrl, responseMessageCreator) {
     var form = formSelector;
     var response = responseSpanSelector;
-    
+    var statusIndicatorElements = $('.status-indicator');
+    function setStatusIndicatorShowing(showing, elements) {
+        var visibilityValue = showing ? 'visible' : 'hidden';
+        elements = elements || statusIndicatorElements;
+        elements.css({
+            'visibility': visibilityValue
+        });
+    }
     this.activate = function() {
         var formControls = form.find('input');
         form.on('submit', function(event) {
             event.preventDefault();
             var formData = form.serialize();
             formControls.attr('disabled', 'disabled');
+            setStatusIndicatorShowing(true);
             $.ajax({
                 url: postUrl,
                 method: 'POST',
@@ -32,6 +40,9 @@ function FormResponseHandler(formSelector, responseSpanSelector, postUrl, respon
                         message = "Error code " + xhr.status + " " + errorThrown;
                     }
                     response.text(message);
+                },
+                complete: function() {
+                    setStatusIndicatorShowing(false);
                 }
             });
         });

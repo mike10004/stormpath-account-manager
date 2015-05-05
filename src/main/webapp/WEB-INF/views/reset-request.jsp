@@ -19,6 +19,9 @@
                             <input class="form-control" placeholder="Email" name="email" type="text" value="<c:out value='${userData.profile.email}'/>">
                         </div>
                         <input type="submit" value="Send Reset Request">
+                        <div class="status-indicator status-inline status-small">
+                            <img src="${pagecontext.request.contextPath}/files/images/loading.gif" alt="Processing">
+                        </div>
                     </fieldset>
                 </form>
                 <div class="result">
@@ -26,8 +29,8 @@
                 </div>
             </div>
         </div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-        <script src="/files/main.js" type="text/javascript"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="${pageContext.request.contextPath}/files/main.js" type="text/javascript"></script>
         <script>
 $(document).ready(function(){
     var form = $('form[name="resetrequest"]');

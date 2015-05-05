@@ -108,3 +108,16 @@ form[name="resetperform"] .input-container {
 .token-verified-false input {
     font-weight: normal;
 }
+
+.status-indicator {
+    visibility: hidden;
+}
+
+.status-inline {
+    display: inline-block;
+}
+
+.status-small img {
+    width: 16px;
+    height: 16px;
+}

@@ -56,8 +56,8 @@
                 </c:choose>
             </div>
         </div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-        <script src="/files/main.js" type="text/javascript"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="${pageContext.request.contextPath}/files/main.js" type="text/javascript"></script>
         <script>
 $(document).ready(function(){
     var form = $('form[name="resetperform"]');
