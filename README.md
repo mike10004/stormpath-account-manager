@@ -44,6 +44,12 @@ Set the following properties in a Maven profile that is activated during build:
 You may run into class version problems if you use JDK 8. Project has been
 built and deployed successfully with JDK 7.
 
+### Build dependencies not available in Maven central
+
+This project has [com.github.mike10004:pac4j-oauth-googleappsdomain:1.0.0](https://github.com/mike10004/pac4j-google-apps-domain-oauth-client)
+as a dependency. Clone and build it to install the artifact into your local
+repository.
+
 ## Why you might want to deploy this application
 
 The conditions that would make this application useful for you are:
