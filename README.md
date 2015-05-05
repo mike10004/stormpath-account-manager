@@ -39,6 +39,11 @@ Set the following properties in a Maven profile that is activated during build:
   to the appspot-hosted authorized redirect URI for your Google Cloud project,
   without the query part; i.e. https://your-app-id.appspot.com/callback
 
+### Use JDK 7 to build
+
+You may run into class version problems if you use JDK 8. Project has been
+built and deployed successfully with JDK 7.
+
 ## Why you might want to deploy this application
 
 The conditions that would make this application useful for you are:
