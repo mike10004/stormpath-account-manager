@@ -9,7 +9,7 @@
     <artifactId>stormpath-account-manager</artifactId>
 
     <properties>
-        <appengine.app.version>3</appengine.app.version>
+        <appengine.app.version>4</appengine.app.version>
         <appengine.target.version>1.9.19</appengine.target.version>
         <appengine.app.id>${stormpath-account-manager.appengine.app.id}</appengine.app.id>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

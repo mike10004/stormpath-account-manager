@@ -6,6 +6,8 @@
                     <a target="_blank" href="<c:out value='${userData.profile.profileUrl}'/>">
                         <c:out value="${userData.profile.email}"/>
                     </a>
+                    -
+                    <a href="${pageContext.request.contextPath}/logout">Sign out</a>
                 </div>
             </div>
         </header>
